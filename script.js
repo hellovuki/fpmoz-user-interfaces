@@ -11,17 +11,17 @@
 // With the document object we can access these objects and change their values
 // and attributes and the browser will automatically update the page
 
-const h1El = document.querySelector("h1");
-const buttonEL = document.querySelector(".btn"); // Query selector selects like CSS
+const h1El = document.querySelector('h1');
+const buttonEL = document.querySelector('.btn'); // Query selector selects like CSS
 
 // We see that query selector is an method on the document object and it returns
 // the first object (the objects created from our HTML elements) that matches the selector
 
-buttonEL.addEventListener("click", function () {
-  h1El.style.color = "white";
-  h1El.style.backgroundColor = "orangered";
+buttonEL.addEventListener('click', function () {
+  h1El.style.color = 'white';
+  h1El.style.backgroundColor = 'orangered';
 
-  h1El.textContent = "Actuallly, One Piece is the greatest story ever told!";
+  h1El.textContent = 'Actuallly, One Piece is the greatest story ever told!';
 });
 
 // The addEventListener method is a method on the button element object
