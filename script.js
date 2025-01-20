@@ -11,7 +11,7 @@ const birthYear = 1998; // we use const for variables that cannot be reassigned
 // Reference data types: Everything that is not a primitive data type
 
 const num = 20; // Number
-const name = "John"; // String
+const name = 'John'; // String
 const isMarried = false; // Boolean can be true or false
 let job; // Undefined, a variable that has not been assigned a value
 const car = null; // Null, a variable that has been explicitly assigned the value null
@@ -24,9 +24,9 @@ const car = null; // Null, a variable that has been explicitly assigned the valu
 // CONDITIONAL STATEMENTS
 if (isMarried) {
   // If accepts a condition that is either true or false
-  console.log("You are married");
+  console.log('You are married');
 } else {
-  console.log("You are not married ");
+  console.log('You are not married ');
 }
 
 // If we write a value in if that is not a boolean, JavaScript will convert it to a boolean
@@ -36,7 +36,7 @@ if (isMarried) {
 
 if (1) {
   // 1 is a truthy value so it will be converted to true
-  console.log("1 is truthy");
+  console.log('1 is truthy');
 }
 
 // the operator && is the logical AND operator and it returns the first falsy value
@@ -53,21 +53,21 @@ if (1) {
 
 // Function declaration
 function greet() {
-  console.log("Hello");
+  console.log('Hello');
 }
 
 greet(); // calling the function
 
 // Function expression
 const greetV2 = function () {
-  console.log("Hello");
+  console.log('Hello');
 };
 
 greetV2(); // calling the function
 
 // Arrow function
 const greetV3 = () => {
-  console.log("Hello");
+  console.log('Hello');
 };
 
 greetV3(); // calling the function
@@ -77,7 +77,7 @@ function greetV4(name) {
   console.log(`Hello ${name}`);
 }
 
-greetV4("John"); // calling the function with an argument
+greetV4('John'); // calling the function with an argument
 
 // Parameters are the variables that we define in the function definition
 // Arguments are the values that we pass to the function when we call it
@@ -142,15 +142,15 @@ const greetWithPrefix = function (greeting) {
   };
 };
 
-const greetWithHello = greetWithPrefix("Hello");
-greetWithHello("John");
-const greetWithHi = greetWithPrefix("Hi");
-greetWithHi("Jane");
+const greetWithHello = greetWithPrefix('Hello');
+greetWithHello('John');
+const greetWithHi = greetWithPrefix('Hi');
+greetWithHi('Jane');
 
 // **** OBJECTS ****
 
 const person = {
-  name: "John",
+  name: 'John',
   age: 26,
 };
 
@@ -160,20 +160,20 @@ const person = {
 // We can access the values of an object using the dot notation
 console.log(person.name); // John
 // or using the bracket notation
-console.log(person["name"]); // John
+console.log(person['name']); // John
 
 // We use the bracket notation when we want to access a property dynamically
-const propertyName = prompt("Enter the property you want to access");
+const propertyName = prompt('Enter the property you want to access');
 console.log(person[propertyName]); // 26
 
 // We can add new properties to an object
-person.job = "Developer";
+person.job = 'Developer';
 
 // If we access a property that does not exist, we get undefined
 
 // When a property is a function, we call it a method
 const personV2 = {
-  name: "John",
+  name: 'John',
   birthYear: 1998,
   calcAge: function () {
     // this is a special variable that gets the value when a function is called
@@ -192,18 +192,18 @@ personV2.calcAge();
 // Arrays are collections of values that can be of any data type
 // and they are ordered
 
-const names = ["John", "Jane", "Jack"];
+const names = ['John', 'Jane', 'Jack'];
 const ages = [26, 27, 28];
-const mixed = ["John", 26, true];
+const mixed = ['John', 26, true];
 const arrayOfObjects = [
-  { name: "John", age: 26 },
-  { name: "Jane", age: 27 },
+  { name: 'John', age: 26 },
+  { name: 'Jane', age: 27 },
 ];
 
 // Arrays are also objects, so they have properties and methods
 
 console.log(names.length); // 3
-arrayOfObjects.push({ name: "Jack", age: 28 }); // adds an element to the end of the array
+arrayOfObjects.push({ name: 'Jack', age: 28 }); // adds an element to the end of the array
 arrayOfObjects.pop(); // removes the last element of the array
 
 // Accessing elements of an array is done via the index
@@ -256,7 +256,7 @@ console.log(x); // 10
 console.log(y); // 20
 
 const companyInfo = {
-  name: "Company",
+  name: 'Company',
   founded: 1998,
 };
 
@@ -265,7 +265,7 @@ const companyInfo = {
 // since arrays are objects, they also behave like this
 const companyInfoV2 = companyInfo;
 
-companyInfoV2.name = "Company V2";
+companyInfoV2.name = 'Company V2';
 
 console.log(companyInfo.name); // Company V2
 console.log(companyInfoV2.name); // Company V2
