@@ -1,0 +1,64 @@
+{
+  "components": {
+    "schemas": {
+      "UserCreate": {
+        "type": "object",
+        "properties": {
+          "firstName": {
+            "type": "string",
+            "example": "Mateo"
+          },
+          "lastName": {
+            "type": "string",
+            "example": "Vuković"
+          },
+          "email": {
+            "type": "string",
+            "example": "example@mail.com"
+          },
+          "password": {
+            "type": "string",
+            "example": "12345678"
+          }
+        },
+        "required": ["firstName", "lastName", "email", "password"]
+      },
+      "UserIn": {
+        "type": "object",
+        "properties": {
+          "email": {
+            "type": "string",
+            "example": "example@mail.com"
+          },
+          "password": {
+            "type": "string",
+            "example": "12345678"
+          }
+        },
+        "required": ["email", "password"]
+      },
+      "UserRead": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "example": "hnuie"
+          },
+          "firstName": {
+            "type": "string",
+            "example": "Mateo"
+          },
+          "lastName": {
+            "type": "string",
+            "example": "Vuković"
+          },
+          "email": {
+            "type": "string",
+            "example": "example@mail.com"
+          }
+        },
+        "required": ["id", "firstName", "lastName", "email"]
+      }
+    }
+  }
+}

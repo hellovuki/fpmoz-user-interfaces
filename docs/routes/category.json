@@ -1,0 +1,63 @@
+{
+  "paths": {
+    "/categories": {
+      "get": {
+        "tags": ["Categories"],
+        "description": "Get all categories, optionally with movies as well",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "includeMovies",
+            "schema": {
+              "type": "boolean"
+            },
+            "description": "Should the categories list the movies as well?"
+          }
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "string",
+                      "example": "success"
+                    },
+                    "data": {
+                      "type": "object",
+                      "properties": {
+                        "categories": {
+                          "type": "array",
+                          "items": {
+                            "$ref": "#/components/schemas/CategoryRead"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "$ref": "#/components/schemas/UnauthorizedError"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

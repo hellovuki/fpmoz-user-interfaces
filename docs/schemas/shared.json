@@ -1,0 +1,20 @@
+{
+  "components": {
+    "schemas": {
+      "UnauthorizedError": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "string",
+            "example": "fail"
+          },
+          "message": {
+            "type": "string",
+            "example": "You are not logged in!"
+          }
+        },
+        "required": ["status", "message"]
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "components": {
+    "schemas": {
+      "CategoryRead": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number",
+            "example": 1
+          },
+          "name": {
+            "type": "string",
+            "example": "Anime"
+          },
+          "movies": {
+            "type": "array",
+            "items": "#/components/schemas/MovieRead"
+          }
+        },
+        "required": ["id", "name"]
+      }
+    }
+  }
+}
