@@ -4,6 +4,18 @@
   box-sizing: border-box;
 }
 
+:root {
+  --app-bg: #18181b;
+  --on-app-bg: #fff;
+}
+
 body {
   font-family: 'Lato', serif;
+  background-color: var(--app-bg);
+  color: var(--on-app-bg);
+  height: 100vh;
+}
+
+#app {
+  height: 100%;
 }
