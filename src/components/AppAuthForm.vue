@@ -24,7 +24,7 @@ async function submit() {
     const { token, user } = await authApi[isSignInMode.value ? 'signin' : 'signup']({
       email: email.value,
       password: password.value,
-      ...(isSignInMode.value ? { firstName: firstName.value, lastName: lastName.value } : {}),
+      ...(!isSignInMode.value ? { firstName: firstName.value, lastName: lastName.value } : {}),
     });
 
     localStorage.setItem('token', token);
