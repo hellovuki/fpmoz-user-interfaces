@@ -5,8 +5,22 @@
 }
 
 :root {
-  --app-bg: #18181b;
-  --on-app-bg: #fff;
+  --app-bg: rgb(24, 24, 27);
+  --on-app-bg: rgb(255, 255, 255);
+  --gradient-bg: linear-gradient(
+    color-mix(in srgb, var(--app-bg) 70%, transparent),
+    color-mix(in srgb, var(--app-bg) 70%, transparent)
+  );
+  --primary: rgb(219, 0, 0);
+  --on-primary: rgba(255, 255, 255);
+  --primary-dark: rgb(185, 28, 28);
+
+  /* SPACING */
+  --sp-xs: 4px;
+  --sp-sm: 8px;
+  --sp-md: 16px;
+  --sp-lg: 24px;
+  --sp-xl: 32px;
 }
 
 body {
@@ -18,4 +32,62 @@ body {
 
 #app {
   height: 100%;
+}
+
+/***** UTILS *****/
+
+/* Padding */
+.pt-lg {
+  padding-top: var(--sp-lg);
+}
+
+.pb-xs {
+  padding-bottom: var(--sp-xs);
+}
+
+.py-sm {
+  padding-top: var(--sp-sm);
+  padding-bottom: var(--sp-sm);
+}
+
+.px-md {
+  padding-left: var(--sp-md);
+  padding-right: var(--sp-md);
+}
+
+.px-lg {
+  padding-left: var(--sp-lg);
+  padding-right: var(--sp-lg);
+}
+
+.pa-xl {
+  padding: var(--sp-xl);
+}
+
+/* Margin */
+
+.mb-sm {
+  margin-bottom: var(--sp-sm);
+}
+
+.mb-md {
+  margin-bottom: var(--sp-md);
+}
+
+/* Flexbox */
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.gap-sm {
+  gap: var(--sp-sm);
 }
