@@ -37,8 +37,8 @@ onUnmounted(() => {
           <div style="width: 100px">
             <AppButton secondary label="Play" :icon="faPlay" />
           </div>
-          <div style="width: 100px">
-            <AppButton tertiary label="Info" :icon="faExclamation" />
+          <div style="width: 130px">
+            <AppButton tertiary label="More info" :icon="faExclamation" />
           </div>
         </div>
       </div>

@@ -51,6 +51,11 @@ body {
   padding-bottom: var(--sp-sm);
 }
 
+.py-md {
+  padding-top: var(--sp-md);
+  padding-bottom: var(--sp-md);
+}
+
 .px-md {
   padding-left: var(--sp-md);
   padding-right: var(--sp-md);
