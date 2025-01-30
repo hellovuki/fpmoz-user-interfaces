@@ -1,4 +1,5 @@
 <script setup>
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 const props = defineProps({
   label: {
     type: String,
@@ -8,19 +9,39 @@ const props = defineProps({
     type: Boolean,
     default: false,
   },
+  secondary: {
+    type: Boolean,
+    default: false,
+  },
+  tertiary: {
+    type: Boolean,
+    default: false,
+  },
+  icon: {
+    type: Object,
+    default: null,
+  },
 });
 </script>
 
 <template>
-  <button class="btn" :class="[props.primary ? 'primary' : '']">
-    {{ props.label }}
+  <button
+    class="btn flex justify-center items-center gap-sm"
+    :class="[
+      props.primary ? 'primary' : '',
+      props.secondary ? 'secondary' : '',
+      props.tertiary ? 'tertiary' : '',
+    ]"
+  >
+    <FontAwesomeIcon v-if="icon" :icon="props.icon" />
+    <span>{{ props.label }}</span>
   </button>
 </template>
 
 <style lang="css" scoped>
 .btn {
-  display: inline-block;
   border: none;
+  background: none;
   border-radius: 9px;
   width: 100%;
   cursor: pointer;
@@ -36,5 +57,23 @@ const props = defineProps({
 
 .primary:hover {
   background-color: var(--primary-dark);
+}
+
+.secondary {
+  background-color: #fff;
+  color: var(--app-bg);
+}
+
+.secondary:hover {
+  background-color: #e7e7e7;
+}
+
+.tertiary {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+.tertiary:hover {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 </style>

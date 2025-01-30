@@ -28,6 +28,7 @@ body {
   background-color: var(--app-bg);
   color: var(--on-app-bg);
   height: 100vh;
+  overflow-x: hidden;
 }
 
 #app {
@@ -88,6 +89,14 @@ body {
   justify-content: center;
 }
 
+.justify-between {
+  justify-content: space-between;
+}
+
 .gap-sm {
   gap: var(--sp-sm);
+}
+
+.gap-md {
+  gap: var(--sp-md);
 }

@@ -8,6 +8,7 @@ async function forbidUnauthenticated() {
 
   try {
     const user = await authApi.getMe();
+
     userStore.currentUser = user;
 
     return true;

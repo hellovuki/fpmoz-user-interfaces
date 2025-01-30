@@ -1,13 +1,17 @@
-import apiConfig from './config'
+import apiConfig from './config';
 
 async function getRandomMovie() {
-  const response = await apiConfig.get('/movies/random')
+  const response = await apiConfig.get('/movies/random');
 
-  console.log(response)
+  const {
+    data: { movie },
+  } = response.data;
+
+  return movie;
 }
 
 const movieApi = {
   getRandomMovie,
-}
+};
 
-export default movieApi
+export default movieApi;

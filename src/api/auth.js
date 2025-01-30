@@ -3,7 +3,10 @@ import apiConfig from './config';
 async function signup(inputData) {
   const response = await apiConfig.post('/users/signup', inputData);
 
-  const { token, data: user } = response.data;
+  const {
+    token,
+    data: { user },
+  } = response.data;
 
   return {
     token,
@@ -14,7 +17,10 @@ async function signup(inputData) {
 async function signin(inputData) {
   const response = await apiConfig.post('/users/login', inputData);
 
-  const { token, data: user } = response.data;
+  const {
+    token,
+    data: { user },
+  } = response.data;
 
   return {
     token,
@@ -25,7 +31,9 @@ async function signin(inputData) {
 async function getMe() {
   const response = await apiConfig.get('/users/me');
 
-  const { user } = response.data;
+  const {
+    data: { user },
+  } = response.data;
 
   return user;
 }
