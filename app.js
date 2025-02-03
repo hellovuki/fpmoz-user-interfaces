@@ -1,8 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const userRouter = require('./routes/user');
-const movieRouter = require('./routes/movie');
-const categoryRouter = require('./routes/category');
+const animalRouter = require('./routes/animal');
 const errorController = require('./controller/error');
 const path = require('path');
 const swaggerUi = require('swagger-ui-express');
@@ -17,8 +16,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // ROUTES
 app.use('/api/v1/users', userRouter);
-app.use('/api/v1/movies', movieRouter);
-app.use('/api/v1/categories', categoryRouter);
+app.use('/api/v1/animals', animalRouter);
 
 // DOCS
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(docsConfig));

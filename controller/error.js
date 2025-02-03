@@ -7,6 +7,7 @@ const handleJWTExpiredError = () =>
   new AppError('Your token has expired! Please log in again!', 401);
 
 const handleZodError = (error) => {
+  console.log(error);
   const message = error.issues.map((i) => i.message + '!').join(' ');
   return new AppError(message, 401);
 };

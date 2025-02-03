@@ -1,11 +1,9 @@
 const lodash = require('lodash');
 const sharedSchema = require('./schemas/shared.json');
 const userSchema = require('./schemas/user.json');
-const movieSchema = require('./schemas/movie.json');
-const categorySchema = require('./schemas/category.json');
+const animalSchema = require('./schemas/animal.json');
 const userRoutes = require('./routes/user.json');
-const movieRoutes = require('./routes/movie.json');
-const categoryRoutes = require('./routes/category.json');
+const animalRoutes = require('./routes/animal.json');
 
 const config = lodash.merge(
   {
@@ -33,11 +31,9 @@ const config = lodash.merge(
   },
   sharedSchema,
   userSchema,
-  movieSchema,
-  categorySchema,
+  animalSchema,
   userRoutes,
-  movieRoutes,
-  categoryRoutes
+  animalRoutes
 );
 
 module.exports = config;

@@ -1,0 +1,181 @@
+{
+  "components": {
+    "schemas": {
+      "AnimalCreate": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "example": "Dog"
+          },
+          "description": {
+            "type": "string",
+            "example": "A dog is a domesticated mammal known for its loyalty, intelligence, and companionship with humans."
+          },
+          "group": {
+            "type": "string",
+            "example": "Mammal"
+          },
+          "diet": {
+            "type": "string",
+            "example": "Meat, fish, eggs..."
+          },
+          "nameOfYoung": {
+            "type": "string",
+            "example": "Puppy"
+          },
+          "continents": {
+            "type": "array",
+            "items": "string",
+            "example": ["North America", "South America", "Europe"]
+          },
+          "averageLifespanInMinutes": {
+            "type": "number",
+            "example": 525600
+          },
+          "biggestThreat": {
+            "type": "string",
+            "example": "Diseases, Poor diet, Poor diet, Traffic accidents."
+          },
+          "imageUrl": {
+            "type": "string",
+            "example": "https://images.dog.ceo/breeds/sharpei/noel.jpg"
+          }
+        },
+        "required": [
+          "name",
+          "description",
+          "group",
+          "diet",
+          "nameOfYoung",
+          "continents",
+          "averageLifespanInMinutes",
+          "biggestThreat",
+          "imageUrl"
+        ]
+      },
+      "AnimalUpdate": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "example": "Dog"
+          },
+          "description": {
+            "type": "string",
+            "example": "A dog is a domesticated mammal known for its loyalty, intelligence, and companionship with humans."
+          },
+          "group": {
+            "type": "string",
+            "example": "Mammal"
+          },
+          "diet": {
+            "type": "string",
+            "example": "Meat, fish, eggs..."
+          },
+          "nameOfYoung": {
+            "type": "string",
+            "example": "Puppy"
+          },
+          "continents": {
+            "type": "array",
+            "items": "string",
+            "example": ["North America", "South America", "Europe"]
+          },
+          "averageLifespanInMinutes": {
+            "type": "number",
+            "example": 525600
+          },
+          "biggestThreat": {
+            "type": "string",
+            "example": "Diseases, Poor diet, Poor diet, Traffic accidents."
+          },
+          "imageUrl": {
+            "type": "string",
+            "example": "https://images.dog.ceo/breeds/sharpei/noel.jpg"
+          }
+        }
+      },
+      "AnimalBase": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "example": "hnuie"
+          },
+          "name": {
+            "type": "string",
+            "example": "Dog"
+          },
+          "group": {
+            "type": "string",
+            "example": "Mammal"
+          },
+          "imageUrl": {
+            "type": "string",
+            "example": "https://images.dog.ceo/breeds/sharpei/noel.jpg"
+          }
+        },
+        "required": ["id", "name", "group", "imageUrl"]
+      },
+      "AnimalRead": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "example": "hnuie"
+          },
+          "name": {
+            "type": "string",
+            "example": "Dog"
+          },
+          "description": {
+            "type": "string",
+            "example": "A dog is a domesticated mammal known for its loyalty, intelligence, and companionship with humans."
+          },
+          "group": {
+            "type": "string",
+            "example": "Mammal"
+          },
+          "diet": {
+            "type": "string",
+            "example": "Meat, fish, eggs..."
+          },
+          "nameOfYoung": {
+            "type": "string",
+            "example": "Puppy"
+          },
+          "continents": {
+            "type": "array",
+            "items": "string",
+            "example": ["North America", "South America", "Europe"]
+          },
+          "averageLifespanInMinutes": {
+            "type": "number",
+            "example": 525600
+          },
+          "biggestThreat": {
+            "type": "string",
+            "example": "Diseases, Poor diet, Poor diet, Traffic accidents."
+          },
+          "imageUrl": {
+            "type": "string",
+            "example": "https://images.dog.ceo/breeds/sharpei/noel.jpg"
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "description",
+          "group",
+          "diet",
+          "nameOfYoung",
+          "continents",
+          "averageLifespanInMinutes",
+          "biggestThreat",
+          "imageUrl"
+        ]
+      }
+    }
+  }
+}
