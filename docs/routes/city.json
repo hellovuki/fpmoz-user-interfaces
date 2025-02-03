@@ -1,9 +1,9 @@
 {
   "paths": {
-    "/animals": {
+    "/cities": {
       "get": {
-        "tags": ["Animals"],
-        "description": "Get all animal",
+        "tags": ["Cities"],
+        "description": "Get all cities",
         "parameters": [
           {
             "in": "query",
@@ -47,7 +47,7 @@
                         "categories": {
                           "type": "array",
                           "items": {
-                            "$ref": "#/components/schemas/AnimalBase"
+                            "$ref": "#/components/schemas/CityBase"
                           }
                         }
                       }
@@ -70,13 +70,13 @@
         }
       },
       "post": {
-        "tags": ["Animals"],
-        "description": "Create new animal",
+        "tags": ["Cities"],
+        "description": "Create new city",
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/AnimalCreate"
+                "$ref": "#/components/schemas/CityCreate"
               }
             }
           }
@@ -102,7 +102,7 @@
                       "properties": {
                         "animal": {
                           "type": "object",
-                          "$ref": "#/components/schemas/AnimalRead"
+                          "$ref": "#/components/schemas/CityRead"
                         }
                       }
                     }
@@ -124,10 +124,10 @@
         }
       }
     },
-    "/animals/{id}": {
+    "/cities/{id}": {
       "get": {
-        "tags": ["Animals"],
-        "description": "Get single animal",
+        "tags": ["Cities"],
+        "description": "Get single city",
         "parameters": [
           {
             "in": "path",
@@ -136,7 +136,7 @@
               "type": "string",
               "example": "hnuie"
             },
-            "description": "Animal id"
+            "description": "City id"
           }
         ],
         "security": [
@@ -160,7 +160,7 @@
                       "properties": {
                         "animal": {
                           "type": "object",
-                          "$ref": "#/components/schemas/AnimalRead"
+                          "$ref": "#/components/schemas/CityRead"
                         }
                       }
                     }
@@ -182,13 +182,13 @@
         }
       },
       "patch": {
-        "tags": ["Animals"],
-        "description": "Update single animal",
+        "tags": ["Cities"],
+        "description": "Update single city",
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/AnimalUpdate"
+                "$ref": "#/components/schemas/CityUpdate"
               }
             }
           }
@@ -201,7 +201,7 @@
               "type": "string",
               "example": "hnuie"
             },
-            "description": "Animal id"
+            "description": "City id"
           }
         ],
         "security": [
@@ -225,7 +225,7 @@
                       "properties": {
                         "animal": {
                           "type": "object",
-                          "$ref": "#/components/schemas/AnimalRead"
+                          "$ref": "#/components/schemas/CityRead"
                         }
                       }
                     }
@@ -247,8 +247,8 @@
         }
       },
       "delete": {
-        "tags": ["Animals"],
-        "description": "Update single animal",
+        "tags": ["Cities"],
+        "description": "Delete single city",
         "parameters": [
           {
             "in": "path",
@@ -257,7 +257,7 @@
               "type": "string",
               "example": "hnuie"
             },
-            "description": "Animal id"
+            "description": "City id"
           }
         ],
         "security": [
@@ -281,7 +281,7 @@
                       "properties": {
                         "animal": {
                           "type": "object",
-                          "$ref": "#/components/schemas/AnimalRead"
+                          "$ref": "#/components/schemas/CityRead"
                         }
                       }
                     }

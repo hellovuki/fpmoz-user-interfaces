@@ -1,0 +1,164 @@
+{
+  "components": {
+    "schemas": {
+      "CityCreate": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "example": "Zenica"
+          },
+          "description": {
+            "type": "string",
+            "example": "Zenica is a city in Bosnia and Herzegovina and an administrative and economic center of the Federation of Bosnia and Herzegovina's Zenica-Doboj Canton."
+          },
+          "country": {
+            "type": "string",
+            "example": "Bosnia and Herzegovina"
+          },
+          "settledYear": {
+            "type": "number",
+            "example": 1415
+          },
+          "consolidatedYear": {
+            "type": "number",
+            "example": 2014
+          },
+          "population": {
+            "type": "number",
+            "example": 110663
+          },
+          "zipCode": {
+            "type": "number",
+            "example": 72000
+          },
+          "imageUrl": {
+            "type": "string",
+            "example": "https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcTAQz6nu_9iVEfYttN3vaiP5ysf-ZqOVI1W8Ya5EU6Pmx3EJ82W8U6Ck3tK_0G0ShLtq0h4djAjpa-dFJqq_dCQmKG78LfnUWOYG6SVkQ"
+          }
+        },
+        "required": [
+          "name",
+          "description",
+          "country",
+          "settledYear",
+          "consolidatedYear",
+          "population",
+          "zipCode",
+          "imageUrl"
+        ]
+      },
+      "CityUpdate": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "example": "Zenica"
+          },
+          "description": {
+            "type": "string",
+            "example": "Zenica is a city in Bosnia and Herzegovina and an administrative and economic center of the Federation of Bosnia and Herzegovina's Zenica-Doboj Canton."
+          },
+          "country": {
+            "type": "string",
+            "example": "Bosnia and Herzegovina"
+          },
+          "settledYear": {
+            "type": "number",
+            "example": 1415
+          },
+          "consolidatedYear": {
+            "type": "number",
+            "example": 2014
+          },
+          "population": {
+            "type": "number",
+            "example": 110663
+          },
+          "zipCode": {
+            "type": "number",
+            "example": 72000
+          },
+          "imageUrl": {
+            "type": "string",
+            "example": "https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcTAQz6nu_9iVEfYttN3vaiP5ysf-ZqOVI1W8Ya5EU6Pmx3EJ82W8U6Ck3tK_0G0ShLtq0h4djAjpa-dFJqq_dCQmKG78LfnUWOYG6SVkQ"
+          }
+        }
+      },
+      "CityBase": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "example": "hnuie"
+          },
+          "name": {
+            "type": "string",
+            "example": "Zenica"
+          },
+          "country": {
+            "type": "string",
+            "example": "Bosnia and Herzegovina"
+          },
+          "imageUrl": {
+            "type": "string",
+            "example": "https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcTAQz6nu_9iVEfYttN3vaiP5ysf-ZqOVI1W8Ya5EU6Pmx3EJ82W8U6Ck3tK_0G0ShLtq0h4djAjpa-dFJqq_dCQmKG78LfnUWOYG6SVkQ"
+          }
+        },
+        "required": ["id", "name", "country", "imageUrl"]
+      },
+      "AnimalRead": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "example": "hnuie"
+          },
+          "name": {
+            "type": "string",
+            "example": "Zenica"
+          },
+          "description": {
+            "type": "string",
+            "example": "Zenica is a city in Bosnia and Herzegovina and an administrative and economic center of the Federation of Bosnia and Herzegovina's Zenica-Doboj Canton."
+          },
+          "country": {
+            "type": "string",
+            "example": "Bosnia and Herzegovina"
+          },
+          "settledYear": {
+            "type": "number",
+            "example": 1415
+          },
+          "consolidatedYear": {
+            "type": "number",
+            "example": 2014
+          },
+          "population": {
+            "type": "number",
+            "example": 110663
+          },
+          "zipCode": {
+            "type": "number",
+            "example": 72000
+          },
+          "imageUrl": {
+            "type": "string",
+            "example": "https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcTAQz6nu_9iVEfYttN3vaiP5ysf-ZqOVI1W8Ya5EU6Pmx3EJ82W8U6Ck3tK_0G0ShLtq0h4djAjpa-dFJqq_dCQmKG78LfnUWOYG6SVkQ"
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "description",
+          "country",
+          "settledYear",
+          "consolidatedYear",
+          "population",
+          "zipCode",
+          "imageUrl"
+        ]
+      }
+    }
+  }
+}

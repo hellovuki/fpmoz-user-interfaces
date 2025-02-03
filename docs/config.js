@@ -1,9 +1,9 @@
 const lodash = require('lodash');
 const sharedSchema = require('./schemas/shared.json');
 const userSchema = require('./schemas/user.json');
-const animalSchema = require('./schemas/animal.json');
+const citySchema = require('./schemas/city.json');
 const userRoutes = require('./routes/user.json');
-const animalRoutes = require('./routes/animal.json');
+const cityRoutes = require('./routes/city.json');
 
 const config = lodash.merge(
   {
@@ -31,9 +31,9 @@ const config = lodash.merge(
   },
   sharedSchema,
   userSchema,
-  animalSchema,
+  citySchema,
   userRoutes,
-  animalRoutes
+  cityRoutes
 );
 
 module.exports = config;
