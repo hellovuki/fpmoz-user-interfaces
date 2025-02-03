@@ -248,7 +248,7 @@
       },
       "delete": {
         "tags": ["Animals"],
-        "description": "Update single animal",
+        "description": "Delete single animal",
         "parameters": [
           {
             "in": "path",
