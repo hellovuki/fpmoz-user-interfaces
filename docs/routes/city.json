@@ -44,7 +44,7 @@
                     "data": {
                       "type": "object",
                       "properties": {
-                        "categories": {
+                        "cities": {
                           "type": "array",
                           "items": {
                             "$ref": "#/components/schemas/CityBase"
