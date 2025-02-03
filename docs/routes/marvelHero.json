@@ -1,9 +1,9 @@
 {
   "paths": {
-    "/recipes": {
+    "/marvelHeroes": {
       "get": {
-        "tags": ["Recipes"],
-        "description": "Get all recipes",
+        "tags": ["Marvel heroes"],
+        "description": "Get all marvel heroes",
         "parameters": [
           {
             "in": "query",
@@ -44,10 +44,10 @@
                     "data": {
                       "type": "object",
                       "properties": {
-                        "recipes": {
+                        "marvelHeroes": {
                           "type": "array",
                           "items": {
-                            "$ref": "#/components/schemas/RecipeBase"
+                            "$ref": "#/components/schemas/MarvelHeroBase"
                           }
                         }
                       }
@@ -70,13 +70,13 @@
         }
       },
       "post": {
-        "tags": ["Recipes"],
-        "description": "Create new recipe",
+        "tags": ["Marvel heroes"],
+        "description": "Create new marvel hero",
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/RecipeCreate"
+                "$ref": "#/components/schemas/MarvelHeroCreate"
               }
             }
           }
@@ -100,9 +100,9 @@
                     "data": {
                       "type": "object",
                       "properties": {
-                        "recipe": {
+                        "marvelHero": {
                           "type": "object",
-                          "$ref": "#/components/schemas/RecipeRead"
+                          "$ref": "#/components/schemas/MarvelHeroRead"
                         }
                       }
                     }
@@ -124,10 +124,10 @@
         }
       }
     },
-    "/recipes/{id}": {
+    "/marvelHeroes/{id}": {
       "get": {
-        "tags": ["Recipes"],
-        "description": "Get single recipe",
+        "tags": ["Marvel heroes"],
+        "description": "Get single marvel hero",
         "parameters": [
           {
             "in": "path",
@@ -136,7 +136,7 @@
               "type": "string",
               "example": "hnuie"
             },
-            "description": "Recipe id"
+            "description": "Marvel hero id"
           }
         ],
         "security": [
@@ -158,9 +158,9 @@
                     "data": {
                       "type": "object",
                       "properties": {
-                        "recipe": {
+                        "marvelHero": {
                           "type": "object",
-                          "$ref": "#/components/schemas/RecipeRead"
+                          "$ref": "#/components/schemas/MarvelHeroRead"
                         }
                       }
                     }
@@ -182,13 +182,13 @@
         }
       },
       "patch": {
-        "tags": ["Recipes"],
-        "description": "Update single recipe",
+        "tags": ["Marvel heroes"],
+        "description": "Update single marvel hero",
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/RecipeUpdate"
+                "$ref": "#/components/schemas/MarvelHeroUpdate"
               }
             }
           }
@@ -201,7 +201,7 @@
               "type": "string",
               "example": "hnuie"
             },
-            "description": "Recipe id"
+            "description": "Marvel hero id"
           }
         ],
         "security": [
@@ -223,9 +223,9 @@
                     "data": {
                       "type": "object",
                       "properties": {
-                        "recipe": {
+                        "marvelHero": {
                           "type": "object",
-                          "$ref": "#/components/schemas/RecipeRead"
+                          "$ref": "#/components/schemas/MarvelHeroRead"
                         }
                       }
                     }
@@ -247,8 +247,8 @@
         }
       },
       "delete": {
-        "tags": ["Recipes"],
-        "description": "Delete single recipe",
+        "tags": ["Marvel heroes"],
+        "description": "Delete single marvel hero",
         "parameters": [
           {
             "in": "path",
@@ -257,7 +257,7 @@
               "type": "string",
               "example": "hnuie"
             },
-            "description": "Recipe id"
+            "description": "Marvel hero id"
           }
         ],
         "security": [
@@ -279,9 +279,9 @@
                     "data": {
                       "type": "object",
                       "properties": {
-                        "recipe": {
+                        "marvelHero": {
                           "type": "object",
-                          "$ref": "#/components/schemas/RecipeRead"
+                          "$ref": "#/components/schemas/MarvelHeroRead"
                         }
                       }
                     }

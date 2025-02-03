@@ -1,0 +1,165 @@
+{
+  "components": {
+    "schemas": {
+      "MarvelHeroCreate": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "example": "Iron Man"
+          },
+          "fullName": {
+            "type": "string",
+            "example": "Tony Stark"
+          },
+          "bio": {
+            "type": "string",
+            "example": "Anthony Edward Tony Stark was born in Long Island, New York. As a child, he inherited his family's business, Stark Industries when his parents were killed in a car crash..."
+          },
+          "actor": {
+            "type": "string",
+            "example": "Robert Downey Jr."
+          },
+          "createdBy": {
+            "type": "string",
+            "example": "Stan Lee"
+          },
+          "abilities": {
+            "type": "array",
+            "items": "string",
+            "example": [
+              "Genius-level intellect",
+              "Proficient scientist and engineer",
+              "Utilizes powered armor suit"
+            ]
+          },
+          "imageUrl": {
+            "type": "string",
+            "example": "https://i.guim.co.uk/img/media/9b7412a06451584d8e594c9d08b3cd0623d23d02/0_32_1800_1081/master/1800.jpg?width=1200&quality=85&auto=format&fit=max&s=c852668beeb82679081ff608bef6734e"
+          }
+        },
+        "required": [
+          "name",
+          "fullName",
+          "bio",
+          "actor",
+          "createdBy",
+          "abilities",
+          "imageUrl"
+        ]
+      },
+      "MarvelHeroUpdate": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "example": "Iron Man"
+          },
+          "fullName": {
+            "type": "string",
+            "example": "Tony Stark"
+          },
+          "bio": {
+            "type": "string",
+            "example": "Anthony Edward Tony Stark was born in Long Island, New York. As a child, he inherited his family's business, Stark Industries when his parents were killed in a car crash..."
+          },
+          "actor": {
+            "type": "string",
+            "example": "Robert Downey Jr."
+          },
+          "createdBy": {
+            "type": "string",
+            "example": "Stan Lee"
+          },
+          "abilities": {
+            "type": "array",
+            "items": "string",
+            "example": [
+              "Genius-level intellect",
+              "Proficient scientist and engineer",
+              "Utilizes powered armor suit"
+            ]
+          },
+          "imageUrl": {
+            "type": "string",
+            "example": "https://i.guim.co.uk/img/media/9b7412a06451584d8e594c9d08b3cd0623d23d02/0_32_1800_1081/master/1800.jpg?width=1200&quality=85&auto=format&fit=max&s=c852668beeb82679081ff608bef6734e"
+          }
+        }
+      },
+      "MarvelHeroBase": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "example": "hnuie"
+          },
+          "name": {
+            "type": "string",
+            "example": "Iron Man"
+          },
+          "fullName": {
+            "type": "string",
+            "example": "Tony Stark"
+          },
+          "imageUrl": {
+            "type": "string",
+            "example": "https://i.guim.co.uk/img/media/9b7412a06451584d8e594c9d08b3cd0623d23d02/0_32_1800_1081/master/1800.jpg?width=1200&quality=85&auto=format&fit=max&s=c852668beeb82679081ff608bef6734e"
+          }
+        },
+        "required": ["id", "name", "fullName", "imageUrl"]
+      },
+      "MarvelHeroRead": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "example": "hnuie"
+          },
+          "name": {
+            "type": "string",
+            "example": "Iron Man"
+          },
+          "fullName": {
+            "type": "string",
+            "example": "Tony Stark"
+          },
+          "bio": {
+            "type": "string",
+            "example": "Anthony Edward Tony Stark was born in Long Island, New York. As a child, he inherited his family's business, Stark Industries when his parents were killed in a car crash..."
+          },
+          "actor": {
+            "type": "string",
+            "example": "Robert Downey Jr."
+          },
+          "createdBy": {
+            "type": "string",
+            "example": "Stan Lee"
+          },
+          "abilities": {
+            "type": "array",
+            "items": "string",
+            "example": [
+              "Genius-level intellect",
+              "Proficient scientist and engineer",
+              "Utilizes powered armor suit"
+            ]
+          },
+          "imageUrl": {
+            "type": "string",
+            "example": "https://i.guim.co.uk/img/media/9b7412a06451584d8e594c9d08b3cd0623d23d02/0_32_1800_1081/master/1800.jpg?width=1200&quality=85&auto=format&fit=max&s=c852668beeb82679081ff608bef6734e"
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "fullName",
+          "bio",
+          "actor",
+          "createdBy",
+          "abilities",
+          "imageUrl"
+        ]
+      }
+    }
+  }
+}

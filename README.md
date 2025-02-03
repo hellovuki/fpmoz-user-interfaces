@@ -1,4 +1,4 @@
-# Recipes API
+# Marvel heroes API
 
 - npm i
 - npm start

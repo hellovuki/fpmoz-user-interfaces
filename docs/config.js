@@ -1,9 +1,9 @@
 const lodash = require('lodash');
 const sharedSchema = require('./schemas/shared.json');
 const userSchema = require('./schemas/user.json');
-const recipeSchema = require('./schemas/recipe.json');
+const marvelHeroSchema = require('./schemas/marvelHero.json');
 const userRoutes = require('./routes/user.json');
-const recipeRoutes = require('./routes/recipe.json');
+const marvelHeroRoutes = require('./routes/marvelHero.json');
 
 const config = lodash.merge(
   {
@@ -31,9 +31,9 @@ const config = lodash.merge(
   },
   sharedSchema,
   userSchema,
-  recipeSchema,
+  marvelHeroSchema,
   userRoutes,
-  recipeRoutes
+  marvelHeroRoutes
 );
 
 module.exports = config;
