@@ -75,3 +75,15 @@ exports.protect = catchAsync(async (req, res, next) => {
   res.locals.user = currentUser;
   next();
 });
+
+exports.getMe = catchAsync(async (req, res, next) => {
+  res.status(200).json({
+    status: 'success',
+    data: {
+      user: {
+        ...res.locals.user,
+        password: undefined,
+      },
+    },
+  });
+});
