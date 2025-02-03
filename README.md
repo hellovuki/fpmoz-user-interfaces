@@ -1,4 +1,4 @@
-# Animals API
+# Recipes API
 
 - npm i
 - npm start

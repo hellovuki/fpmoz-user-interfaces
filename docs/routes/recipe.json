@@ -1,9 +1,9 @@
 {
   "paths": {
-    "/animals": {
+    "/recipes": {
       "get": {
-        "tags": ["Animals"],
-        "description": "Get all animal",
+        "tags": ["Recipes"],
+        "description": "Get all recipes",
         "parameters": [
           {
             "in": "query",
@@ -44,10 +44,10 @@
                     "data": {
                       "type": "object",
                       "properties": {
-                        "categories": {
+                        "recipes": {
                           "type": "array",
                           "items": {
-                            "$ref": "#/components/schemas/AnimalBase"
+                            "$ref": "#/components/schemas/RecipeBase"
                           }
                         }
                       }
@@ -70,13 +70,13 @@
         }
       },
       "post": {
-        "tags": ["Animals"],
-        "description": "Create new animal",
+        "tags": ["Recipes"],
+        "description": "Create new recipe",
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/AnimalCreate"
+                "$ref": "#/components/schemas/RecipeCreate"
               }
             }
           }
@@ -100,9 +100,9 @@
                     "data": {
                       "type": "object",
                       "properties": {
-                        "animal": {
+                        "recipe": {
                           "type": "object",
-                          "$ref": "#/components/schemas/AnimalRead"
+                          "$ref": "#/components/schemas/RecipeRead"
                         }
                       }
                     }
@@ -124,10 +124,10 @@
         }
       }
     },
-    "/animals/{id}": {
+    "/recipes/{id}": {
       "get": {
-        "tags": ["Animals"],
-        "description": "Get single animal",
+        "tags": ["Recipes"],
+        "description": "Get single recipe",
         "parameters": [
           {
             "in": "path",
@@ -136,7 +136,7 @@
               "type": "string",
               "example": "hnuie"
             },
-            "description": "Animal id"
+            "description": "Recipe id"
           }
         ],
         "security": [
@@ -158,9 +158,9 @@
                     "data": {
                       "type": "object",
                       "properties": {
-                        "animal": {
+                        "recipe": {
                           "type": "object",
-                          "$ref": "#/components/schemas/AnimalRead"
+                          "$ref": "#/components/schemas/RecipeRead"
                         }
                       }
                     }
@@ -182,13 +182,13 @@
         }
       },
       "patch": {
-        "tags": ["Animals"],
-        "description": "Update single animal",
+        "tags": ["Recipes"],
+        "description": "Update single recipe",
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/AnimalUpdate"
+                "$ref": "#/components/schemas/RecipeUpdate"
               }
             }
           }
@@ -201,7 +201,7 @@
               "type": "string",
               "example": "hnuie"
             },
-            "description": "Animal id"
+            "description": "Recipe id"
           }
         ],
         "security": [
@@ -223,9 +223,9 @@
                     "data": {
                       "type": "object",
                       "properties": {
-                        "animal": {
+                        "recipe": {
                           "type": "object",
-                          "$ref": "#/components/schemas/AnimalRead"
+                          "$ref": "#/components/schemas/RecipeRead"
                         }
                       }
                     }
@@ -247,8 +247,8 @@
         }
       },
       "delete": {
-        "tags": ["Animals"],
-        "description": "Delete single animal",
+        "tags": ["Recipes"],
+        "description": "Delete single recipe",
         "parameters": [
           {
             "in": "path",
@@ -257,7 +257,7 @@
               "type": "string",
               "example": "hnuie"
             },
-            "description": "Animal id"
+            "description": "Recipe id"
           }
         ],
         "security": [
@@ -279,9 +279,9 @@
                     "data": {
                       "type": "object",
                       "properties": {
-                        "animal": {
+                        "recipe": {
                           "type": "object",
-                          "$ref": "#/components/schemas/AnimalRead"
+                          "$ref": "#/components/schemas/RecipeRead"
                         }
                       }
                     }
