@@ -1,4 +1,4 @@
-# Animals API
+# Cities API
 
 - npm i
 - npm start
